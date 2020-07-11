@@ -89,6 +89,12 @@ while(l<r && (...)){ // 需要自己挖掘
 [187. 重复的DNA序列](code/187.%20重复的DNA序列.md) hash、Bitmap、字符串处理 第一次出现和后面几次出现的问题 和 烂橘子有点像  
 [1178. 猜字谜](code/1178.%20猜字谜.md) 位运算、string的map
 
+### 前缀和
+
+[303 ]
+[307]
+[树状数组](https://leetcode-cn.com/problems/count-of-smaller-numbers-after-self/solution/shu-zhuang-shu-zu-by-liweiwei1419/)
+
 ### DP
 
 #### 典型DP
