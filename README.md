@@ -42,15 +42,29 @@
 `find()`、`substr()`的使用，合理使用string类型比大小的性质。
 `isalnum()`、`tolower()`。
 
-[14. 最长公共前缀](code/14.%20最长公共前缀.md)  
-[面试题 01.09. 字符串轮转](code/面试题%2001.09.%20字符串轮转.md)
++ [14. 最长公共前缀](code/14.%20最长公共前缀.md)  
++ [面试题 01.09. 字符串轮转](code/面试题%2001.09.%20字符串轮转.md)
+
+### `priority_queue` `unordered_map` ` unordered_set`
+
+```cpp
+priority_queue<long, vector<long>, greater<long> > q; // 这是小顶堆
+priority_queue<long, vector<long>, less<long> > q;    // 默认是大顶堆
+unordered_map<int, int> m;
+unordered_set<int> s;
+if(!m[i]) ++m[i];
+if(!s.count(i)) s.insert(i);
+```
+
++ [剑指 Offer 49. 丑数](code/剑指%20Offer%2049.%20丑数.md)
 
 ### 图论
 
 + 二部图
   + [785. 判断二分图](code/785.%20判断二分图.md) DFS和BFS都要会
   + [886. 可能的二分法](code/886.%20可能的二分法.md) 多了数据处理
- 
+  
+
 ## 算法
 
 ### 双指针
@@ -184,6 +198,7 @@ DP五步走：
 |[面试题 16.19. 水域大小](code/面试题%2016.19.%20水域大小.md)|dfs|
 |[面试题57 - II. 和为s的连续正数序列](code/面试题57%20-%20II.%20和为s的连续正数序列.md)|双指针+滑动窗口|
 |[剑指 Offer 10- II. 青蛙跳台阶问题](code/剑指%20Offer%2010-%20II.%20青蛙跳台阶问题.md)|DP+int越界|
+|[剑指 Offer 49. 丑数](code/剑指%20Offer%2049.%20丑数.md)👹|DP 最小堆|
 |[剑指 Offer 63. 股票的最大利润](code/剑指%20Offer%2063.%20股票的最大利润.md)||
 |[剑指 Offer 68 - II. 二叉树的最近公共祖先](code/剑指%20Offer%2068%20-%20II.%20二叉树的最近公共祖先.md)👹|递归+二叉树|
 
