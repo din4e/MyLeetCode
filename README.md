@@ -45,6 +45,14 @@
 + `substr()`: `basic_string substr( size_type pos = 0, size_type count = npos ) const;`
 + `isalnum()`
 + `tolower()`
++ `find_first_not_of()`  
+
+```cpp
+int i=s.find_first_not_of(' ');
+if(i==string::npos) return false;
+int j=s.find_last_not_of(' '); // mn
+s=s.substr(i,j-i+1);
+```
 
 + [14. 最长公共前缀](code/14.%20最长公共前缀.md)  
 + [面试题 01.09. 字符串轮转](code/面试题%2001.09.%20字符串轮转.md)
