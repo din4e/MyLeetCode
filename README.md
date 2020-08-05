@@ -16,6 +16,25 @@
   + [118. 杨辉三角](code/118.%20杨辉三角.md)  
   + [119. 杨辉三角 II](code/119.%20杨辉三角%20II.md)
 
+### `string`
+
+`find()`、`substr()`的使用，合理使用string类型比大小的性质。
++ `substr()`: `basic_string substr( size_type pos = 0, size_type count = npos ) const;`
++ `isalnum()`
++ `tolower()`
++ `find_first_not_of()`  
+
+```cpp
+int i=s.find_first_not_of(' ');
+if(i==string::npos) return false;
+int j=s.find_last_not_of(' '); // mn
+s=s.substr(i,j-i+1);
+```
+
++ KMP [28. 实现 strStr()](code/28.%20实现%20strStr().md)
++ [14. 最长公共前缀](code/14.%20最长公共前缀.md)  
++ [面试题 01.09. 字符串轮转](code/面试题%2001.09.%20字符串轮转.md)
+
 ### 链表
 
 + 链表
@@ -40,24 +59,6 @@
   + [876. 链表的中间结点](code/876.%20链表的中间结点.md)
   + [109. 有序链表转换二叉搜索树](code/109.%20有序链表转换二叉搜索树.md)
   + [114. 二叉树展开为链表](code/114.%20二叉树展开为链表.md)
-
-### `string`
-
-`find()`、`substr()`的使用，合理使用string类型比大小的性质。
-+ `substr()`: `basic_string substr( size_type pos = 0, size_type count = npos ) const;`
-+ `isalnum()`
-+ `tolower()`
-+ `find_first_not_of()`  
-
-```cpp
-int i=s.find_first_not_of(' ');
-if(i==string::npos) return false;
-int j=s.find_last_not_of(' '); // mn
-s=s.substr(i,j-i+1);
-```
-
-+ [14. 最长公共前缀](code/14.%20最长公共前缀.md)  
-+ [面试题 01.09. 字符串轮转](code/面试题%2001.09.%20字符串轮转.md)
 
 ### `priority_queue` `unordered_map` ` unordered_set`
 
@@ -94,6 +95,8 @@ while(l<r && (...)){ // 需要自己挖掘
     else if(condition) {do();}
 }
 ```
+
++ 使用场合：一维，二维数组，字符串交换
 
 + 数字之和系列
   + [1. 两数之和](code/1.%20两数之和.md)
@@ -275,4 +278,4 @@ while(l<r && (...)){ // 需要自己挖掘
 
 ### [双周赛21](https://leetcode-cn.com/contest/biweekly-contest-21/)
 
-[]() dfs的方式不一样，确实不一样啊
+dfs的方式不一样，确实不一样啊
