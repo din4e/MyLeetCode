@@ -23,3 +23,22 @@ int KMP(string P, string S) {
     return j==n?i-j:-1;
 }
 ```
+
+## 快排
+
+```cpp
+void quicksortv1(vector<int> &a,int l,int r){
+    if(l>=r) return;
+    int ll=l,rr=r;//cout<<l<<" "<<r<<"\n";
+    int key=a[l];
+    while(l<r){
+        while(a[r]>key&&l<r) r--;
+        a[l]=a[r];
+        while(a[l]<=key&&l<r) l++;
+        a[r]=a[l];
+    }
+    a[l]=key;
+    quicksortv1(a,ll,l-1);
+    quicksortv1(a,l+1,rr);
+}
+```
