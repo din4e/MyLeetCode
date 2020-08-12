@@ -50,7 +50,7 @@ int func2(int k,vector<point> &tr,vector<vector<vector<int>>> &dist){
     return resi;
 }
 void flash(vector<vector<bool>> &m){
-    fill(m.begin(),m.begin()+51*51,false);
+    fill(m[0].begin(),m[0].begin()+51*51,false);
 }
 int main(){
     cin>>T;
