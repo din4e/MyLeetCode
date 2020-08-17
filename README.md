@@ -22,6 +22,7 @@
 ### `string`
 
 `find()`、`substr()`的使用，合理使用string类型比大小的性质。
+
 + `substr()`: `basic_string substr( size_type pos = 0, size_type count = npos ) const;`
 + `isalnum()`
 + `tolower()`
@@ -34,7 +35,8 @@ int j=s.find_last_not_of(' '); // mn
 s=s.substr(i,j-i+1);
 ```
 
-+ KMP [28. 实现 strStr()](code/28.%20实现%20strStr().md)
++ [8. 字符串转换整数 (atoi)](code/8.%20字符串转换整数%20(atoi).md) 比较繁琐，有些细节要注意
++ [28. 实现 strStr()](code/28.%20实现%20strStr().md) KMP
 + [14. 最长公共前缀](code/14.%20最长公共前缀.md)  
 + [面试题 01.09. 字符串轮转](code/面试题%2001.09.%20字符串轮转.md)
 
@@ -53,10 +55,12 @@ s=s.substr(i,j-i+1);
 + 二叉树遍历
   + [94. 二叉树的中序遍历](code/94.%20二叉树的中序遍历.md)  
   + [95. 不同的二叉搜索树 II](code/95.%20不同的二叉搜索树%20II.md) 返回vector<*TreeNode>
+  + [110. 平衡二叉树](code/110.%20平衡二叉树.md)
   + [112. 路径总和](code/112.%20路径总和.md) 递归  
   + [113. 路径总和 II](code/113.%20路径总和%20II.md) 递归  
   + [437. 路径总和 III](code/437.%20路径总和%20III.md)  双递归、**O(n)的优化很巧妙**、前缀和
   + [543. 二叉树的直径](code/543.%20二叉树的直径.md)
+
 
 + 二叉树和链表
   + [108. 将有序数组转换为二叉搜索树](code/108.%20将有序数组转换为二叉搜索树.md)
@@ -64,7 +68,7 @@ s=s.substr(i,j-i+1);
   + [109. 有序链表转换二叉搜索树](code/109.%20有序链表转换二叉搜索树.md)
   + [114. 二叉树展开为链表](code/114.%20二叉树展开为链表.md)
 
-### `priority_queue` `unordered_map` ` unordered_set`
+### `priority_queue` `unordered_map` ` unordered_set` 
 
 ```cpp
 priority_queue<long, vector<long>, greater<long> > q; // 这是小顶堆
