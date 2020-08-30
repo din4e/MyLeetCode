@@ -46,6 +46,7 @@ s=s.substr(i,j-i+1);
   + [19. 删除链表的倒数第N个节点](code/19.%20删除链表的倒数第N个节点.md) 1. **防止删除后链表为空** 2. 递归的思路
   + [24. 两两交换链表中的节点](code/24.%20两两交换链表中的节点.md) 链表交换
   + [25. K 个一组翻转链表](code/25.%20K%20个一组翻转链表.md) 链表的翻转要3个指针
+  + [141. 环形链表](code/141.%20环形链表.md) 判断环
   + [143. 重排链表](code/143.%20重排链表.md)  
   + [160. 相交链表](code/160.%20相交链表.md)  
   + [面试题 02.06. 回文链表](code/面试题%2002.06.%20回文链表.md) 这边快慢指针是`fast->next`和`fast->next->next`做判单依据 链表反转  
@@ -74,9 +75,13 @@ s=s.substr(i,j-i+1);
 priority_queue<long, vector<long>, greater<long> > q; // 这是小顶堆
 priority_queue<long, vector<long>, less<long> > q;    // 默认是大顶堆
 unordered_map<int, int> m;
-unordered_set<int> s;
 if(!m[i]) ++m[i];
+
+unordered_set<int> s;
 if(!s.count(i)) s.insert(i);
+
+set<int> s;
+if(s.find(i)!=s.end()) s.insert(i);
 ```
 
 + `priority_queue`
