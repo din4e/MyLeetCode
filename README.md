@@ -230,6 +230,10 @@ if(s.find(i)!=s.end()) s.insert(i);
 + [337. 打家劫舍 III](code/337.%20打家劫舍%20III.md)
 + [968. 监控二叉树](code/968.%20监控二叉树.md)
 
+#### 2.5.4 背包问题
+
+[leetcode上背包问题的小结](https://leetcode-cn.com/problems/partition-equal-subset-sum/solution/0-1-bei-bao-wen-ti-xiang-jie-zhen-dui-ben-ti-de-yo/)
+
 ## 3. 专题
 
 ### 3.1 全排列
